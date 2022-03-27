@@ -15,7 +15,7 @@ pipeline{
                 echo "${GIT_BRANCH}"
                 echo "check basic setup ..."
                 sh "java -version"
-                sh "echo ${USER}"
+//                 sh "echo ${USER}"
 //                 sh "git --version"
                 sh "docker version"
 //                 sh "mvn -v"
