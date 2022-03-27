@@ -38,7 +38,7 @@ pipeline{
                 echo "${world}"
                 echo "done compile"
                 sh 'pwd && ls -alh'
-                sh "mvn -v"
+//                 sh "mvn -v"
             }
         }
 
