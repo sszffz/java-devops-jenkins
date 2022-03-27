@@ -17,10 +17,10 @@ pipeline{
                 sh "java -version"
 //                 sh "echo ${USER}"
 //                 sh "git --version"
-                sh "docker version"
+                sh "sudo docker version"
 //                 sh "mvn -v"
             }
-        }
+        }s
 
         // 1. compile
         stage('compile') {
