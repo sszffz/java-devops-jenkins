@@ -1,11 +1,18 @@
 pipeline{
     agent any
 
+    environment {
+      hello = "adfaf"
+      world = "aaaaaaaaaaaaaa"
+    }
+
     stages {
         // 1. compile
         stage('compile') {
             steps {
                 echo "compile ..."
+                echo "$hello"
+                echo "${world}"
             }
         }
 
