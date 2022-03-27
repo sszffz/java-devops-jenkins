@@ -9,6 +9,7 @@ pipeline{
     stages {
         // 0. environment test
         stage("environment test") {
+
             steps {
                 sh 'printenv'
                 sh "echo ${GIT_BRANCH}"
@@ -17,18 +18,22 @@ pipeline{
                 sh "java -version"
                 sh "git --version"
 //                 sh "docker version"
-                sh "mvn -v"
+//                 sh "mvn -v"
             }
         }
 
         // 1. compile
         stage('compile') {
+            agent {
+                docker { image "maven:3-alpine"}
+            }
             steps {
                 echo "compile ..."
                 echo "$hello"
                 echo "${world}"
                 echo "done compile"
                 sh 'pwd && ls -alh'
+                sh "mvn -v"
             }
         }
 
