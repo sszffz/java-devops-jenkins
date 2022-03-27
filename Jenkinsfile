@@ -14,6 +14,8 @@ pipeline{
                 echo "$hello"
                 echo "${world}"
                 echo "done compile"
+                sh 'pwd && ls -alh'
+                sh 'printenv'
             }
         }
 
