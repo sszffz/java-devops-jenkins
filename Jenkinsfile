@@ -18,6 +18,7 @@ pipeline{
                 sh 'printenv'
                 sh "echo ${GIT_BRANCH}"
                 echo "${GIT_BRANCH}"
+                sh "java -version"
             }
         }
 
