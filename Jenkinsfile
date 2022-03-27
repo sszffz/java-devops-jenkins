@@ -9,14 +9,13 @@ pipeline{
     stages {
         // 0. environment test
         stage("environment test") {
-
             steps {
                 sh 'printenv'
                 sh "echo ${GIT_BRANCH}"
                 echo "${GIT_BRANCH}"
                 echo "check basic setup ..."
                 sh "java -version"
-                sh "git --version"
+//                 sh "git --version"
 //                 sh "docker version"
 //                 sh "mvn -v"
             }
