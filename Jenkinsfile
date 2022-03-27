@@ -31,7 +31,7 @@ pipeline{
 //                 docker {
 //                     image 'maven:3-alpine'
 //                 }
-            }
+//             }
             steps {
                 echo "compile ..."
                 echo "$hello"
