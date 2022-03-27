@@ -23,8 +23,13 @@ pipeline{
 
         // 1. compile
         stage('compile') {
+//             agent {
+//                 docker { image "maven:3-alpine"}
+//             }
             agent {
-                docker { image "maven:3-alpine"}
+                docker {
+                    image 'maven:3-alpine'
+                }
             }
             steps {
                 echo "compile ..."
