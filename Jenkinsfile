@@ -20,7 +20,7 @@ pipeline{
 //                 sh "sudo docker version"
 //                 sh "mvn -v"
             }
-        }s
+        }
 
         // 1. compile
         stage('compile') {
