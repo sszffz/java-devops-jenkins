@@ -13,6 +13,7 @@ pipeline{
                 echo "compile ..."
                 echo "$hello"
                 echo "${world}"
+                echo "done compile"
             }
         }
 
