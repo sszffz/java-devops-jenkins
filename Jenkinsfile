@@ -17,7 +17,7 @@ pipeline{
                 sh "java -version"
 //                 sh "echo ${USER}"
 //                 sh "git --version"
-                sh "docker version"
+//                 sh "docker version"
 //                 sh "mvn -v"
             }
         }
@@ -38,7 +38,7 @@ pipeline{
                 echo "${world}"
                 echo "done compile"
                 sh 'pwd && ls -alh'
-//                 sh "mvn -v"
+                sh "mvn -v"
             }
         }
 
